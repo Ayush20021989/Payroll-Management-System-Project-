@@ -561,13 +561,13 @@ void searchEmp()
 {
             system("Color 3");
             system("cls");
-            int flag=0,jobcode;
+            int flag=0,code;
             gotoXY(56,5);
-            cout<<"Enter Code Of the Employee : ";
+            cout<<"Enter ID Of the Employee : ";
             cin>>jobcode;
         for(int i=0;i<=num-1;i++)
         {
-            if(ep[i].id==jobcode)
+            if(ep[i].id==code)
             {
 
                 system("cls");

@@ -564,7 +564,7 @@ void searchEmp()
             int flag=0,code;
             gotoXY(56,5);
             cout<<"Enter ID Of the Employee : ";
-            cin>>jobcode;
+            cin>>code;
         for(int i=0;i<=num-1;i++)
         {
             if(ep[i].id==code)

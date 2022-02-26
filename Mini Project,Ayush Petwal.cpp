@@ -482,7 +482,7 @@ void displayPayslip()
             system("Color F");
         gotoXY(58,5);
             int code,i;
-            cout<<"Enter Employee Job Code :";
+            cout<<"Enter Employee ID :";
             cin>>code;
     for(i=0;i<=num-1;i++)
 	{
@@ -689,18 +689,18 @@ void Edit()
 {
             system("cls");
             Border();
-            int jobcode,found=0;
+            int code,found=0;
         gotoXY(58,5);
             printf("Edit a Record");
             int i;
             char option;
         gotoXY(58,7);
-            cout<<"Enter the jobcode To Edit : ";
-            cin>>jobcode;
+            cout<<"Enter the Employee ID : ";
+            cin>>code;
 
         for(i=0;i<=num-1;i++)
         {
-          if(ep[i].id==jobcode)
+          if(ep[i].id==code)
 		  {
                 found=1;
 			while((option=cin.get())!='q')
